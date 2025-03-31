@@ -1,0 +1,64 @@
+services:
+  mysql:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "--silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  airflow-webserver:
+    image: custom-airflow:latest
+    restart: always
+    env_file: .env
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://airflow:airflow@mysql/sentiment_db?charset=utf8mb4
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__SMTP__SMTP_HOST: smtp.gmail.com  
+      AIRFLOW__SMTP__SMTP_PORT: 587
+      AIRFLOW__SMTP__SMTP_USER: challamalla5sunil@gmail.com
+      AIRFLOW__SMTP__SMTP_PASSWORD: ${SMTP_PASSWORD} 
+      AIRFLOW__SMTP__SMTP_STARTTLS: "True"  
+      AIRFLOW__SMTP__SMTP_SSL: "False"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    command: webserver
+
+  airflow-scheduler:
+    image: custom-airflow:latest
+    restart: always
+    env_file: .env
+    depends_on:
+      - mysql
+    environment:
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://airflow:airflow@mysql/sentiment_db?charset=utf8mb4
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__SMTP__SMTP_HOST: smtp.gmail.com  
+      AIRFLOW__SMTP__SMTP_PORT: 587
+      AIRFLOW__SMTP__SMTP_USER: challamalla5sunil@gmail.com
+      AIRFLOW__SMTP__SMTP_PASSWORD: ${SMTP_PASSWORD}  
+      AIRFLOW__SMTP__SMTP_STARTTLS: "True"  
+      AIRFLOW__SMTP__SMTP_SSL: "False"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+    command: scheduler
+
+volumes:
+  mysql_data:

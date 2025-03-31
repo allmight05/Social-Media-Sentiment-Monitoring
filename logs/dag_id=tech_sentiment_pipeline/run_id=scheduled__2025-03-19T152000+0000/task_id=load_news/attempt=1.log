@@ -1,0 +1,35 @@
+[2025-03-19T15:36:15.866+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.load_news scheduled__2025-03-19T15:20:00+00:00 [queued]>
+[2025-03-19T15:36:15.876+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.load_news scheduled__2025-03-19T15:20:00+00:00 [queued]>
+[2025-03-19T15:36:15.876+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-19T15:36:15.877+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2025-03-19T15:36:15.877+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-19T15:36:15.899+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): load_news> on 2025-03-19 15:20:00+00:00
+[2025-03-19T15:36:15.907+0000] {standard_task_runner.py:55} INFO - Started process 248 to run task
+[2025-03-19T15:36:15.913+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tech_sentiment_pipeline', 'load_news', 'scheduled__2025-03-19T15:20:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/example.py', '--cfg-path', '/tmp/tmplu9u1gg4']
+[2025-03-19T15:36:15.915+0000] {standard_task_runner.py:83} INFO - Job 2: Subtask load_news
+[2025-03-19T15:36:16.008+0000] {task_command.py:389} INFO - Running <TaskInstance: tech_sentiment_pipeline.load_news scheduled__2025-03-19T15:20:00+00:00 [running]> on host 7408291b7a22
+[2025-03-19T15:36:16.097+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tech_sentiment_pipeline
+AIRFLOW_CTX_TASK_ID=load_news
+AIRFLOW_CTX_EXECUTION_DATE=2025-03-19T15:20:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-03-19T15:20:00+00:00
+[2025-03-19T15:36:16.109+0000] {base.py:73} INFO - Using connection ID 'mysql_default' for task execution.
+[2025-03-19T15:36:17.117+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/example.py", line 112, in extract_transform_load_news
+    news_data = extract_news_api_data()
+  File "/opt/airflow/dags/example.py", line 66, in extract_news_api_data
+    raise Exception(f"News API error: {response.status_code}")
+Exception: News API error: 401
+[2025-03-19T15:36:17.130+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=tech_sentiment_pipeline, task_id=load_news, execution_date=20250319T152000, start_date=20250319T153615, end_date=20250319T153617
+[2025-03-19T15:36:17.153+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 2 for task load_news (News API error: 401; 248)
+[2025-03-19T15:36:17.167+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2025-03-19T15:36:17.201+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

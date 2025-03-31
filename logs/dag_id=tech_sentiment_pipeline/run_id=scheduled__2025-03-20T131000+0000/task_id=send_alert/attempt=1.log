@@ -1,0 +1,50 @@
+[2025-03-20T13:20:07.497+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.send_alert scheduled__2025-03-20T13:10:00+00:00 [queued]>
+[2025-03-20T13:20:07.508+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.send_alert scheduled__2025-03-20T13:10:00+00:00 [queued]>
+[2025-03-20T13:20:07.508+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-20T13:20:07.509+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2025-03-20T13:20:07.509+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-20T13:20:07.534+0000] {taskinstance.py:1304} INFO - Executing <Task(EmailOperator): send_alert> on 2025-03-20 13:10:00+00:00
+[2025-03-20T13:20:07.540+0000] {standard_task_runner.py:55} INFO - Started process 276 to run task
+[2025-03-20T13:20:07.543+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tech_sentiment_pipeline', 'send_alert', 'scheduled__2025-03-20T13:10:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/sentiment_ETL_pipeline.py', '--cfg-path', '/tmp/tmpatgffdo_']
+[2025-03-20T13:20:07.545+0000] {standard_task_runner.py:83} INFO - Job 10: Subtask send_alert
+[2025-03-20T13:20:07.624+0000] {task_command.py:389} INFO - Running <TaskInstance: tech_sentiment_pipeline.send_alert scheduled__2025-03-20T13:10:00+00:00 [running]> on host 228fbd75e4c1
+[2025-03-20T13:20:07.720+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tech_sentiment_pipeline
+AIRFLOW_CTX_TASK_ID=send_alert
+AIRFLOW_CTX_EXECUTION_DATE=2025-03-20T13:10:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-03-20T13:10:00+00:00
+[2025-03-20T13:20:07.732+0000] {logging_mixin.py:137} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/email.py:120 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2025-03-20T13:20:07.733+0000] {email.py:229} INFO - Email alerting: attempt 1
+[2025-03-20T13:20:08.867+0000] {email.py:241} INFO - Sent an alert email to ['challamallasunilreddy00553@gmail.com']
+[2025-03-20T13:20:10.168+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=tech_sentiment_pipeline, task_id=send_alert, execution_date=20250320T131000, start_date=20250320T132007, end_date=20250320T132010
+[2025-03-20T13:20:10.204+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-03-20T13:20:10.222+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-03-20T13:26:08.526+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.send_alert scheduled__2025-03-20T13:10:00+00:00 [queued]>
+[2025-03-20T13:26:08.542+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.send_alert scheduled__2025-03-20T13:10:00+00:00 [queued]>
+[2025-03-20T13:26:08.543+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-20T13:26:08.544+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2025-03-20T13:26:08.544+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-20T13:26:08.573+0000] {taskinstance.py:1304} INFO - Executing <Task(EmailOperator): send_alert> on 2025-03-20 13:10:00+00:00
+[2025-03-20T13:26:08.581+0000] {standard_task_runner.py:55} INFO - Started process 216 to run task
+[2025-03-20T13:26:08.586+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tech_sentiment_pipeline', 'send_alert', 'scheduled__2025-03-20T13:10:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/sentiment_ETL_pipeline.py', '--cfg-path', '/tmp/tmpxxtl5wi2']
+[2025-03-20T13:26:08.593+0000] {standard_task_runner.py:83} INFO - Job 6: Subtask send_alert
+[2025-03-20T13:26:08.693+0000] {task_command.py:389} INFO - Running <TaskInstance: tech_sentiment_pipeline.send_alert scheduled__2025-03-20T13:10:00+00:00 [running]> on host d1794548d6c6
+[2025-03-20T13:26:08.806+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tech_sentiment_pipeline
+AIRFLOW_CTX_TASK_ID=send_alert
+AIRFLOW_CTX_EXECUTION_DATE=2025-03-20T13:10:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-03-20T13:10:00+00:00
+[2025-03-20T13:26:08.820+0000] {logging_mixin.py:137} WARNING - /home/***/.local/lib/python3.7/site-packages/***/utils/email.py:120 RemovedInAirflow3Warning: Fetching SMTP credentials from configuration variables will be deprecated in a future release. Please set credentials using a connection instead.
+[2025-03-20T13:26:08.821+0000] {email.py:229} INFO - Email alerting: attempt 1
+[2025-03-20T13:26:09.949+0000] {email.py:241} INFO - Sent an alert email to ['pc.sunilreddy.civilreg.2025@gmail.com']
+[2025-03-20T13:26:11.215+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=tech_sentiment_pipeline, task_id=send_alert, execution_date=20250320T131000, start_date=20250320T132608, end_date=20250320T132611
+[2025-03-20T13:26:11.244+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-03-20T13:26:11.265+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

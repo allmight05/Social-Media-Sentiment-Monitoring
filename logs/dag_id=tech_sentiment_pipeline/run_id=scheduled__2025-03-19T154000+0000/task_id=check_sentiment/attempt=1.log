@@ -1,0 +1,27 @@
+[2025-03-19T15:51:28.356+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.check_sentiment scheduled__2025-03-19T15:40:00+00:00 [queued]>
+[2025-03-19T15:51:28.366+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.check_sentiment scheduled__2025-03-19T15:40:00+00:00 [queued]>
+[2025-03-19T15:51:28.366+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-19T15:51:28.366+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2025-03-19T15:51:28.367+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-19T15:51:28.387+0000] {taskinstance.py:1304} INFO - Executing <Task(BranchPythonOperator): check_sentiment> on 2025-03-19 15:40:00+00:00
+[2025-03-19T15:51:28.394+0000] {standard_task_runner.py:55} INFO - Started process 212 to run task
+[2025-03-19T15:51:28.399+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tech_sentiment_pipeline', 'check_sentiment', 'scheduled__2025-03-19T15:40:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/example.py', '--cfg-path', '/tmp/tmpfmb2k321']
+[2025-03-19T15:51:28.400+0000] {standard_task_runner.py:83} INFO - Job 4: Subtask check_sentiment
+[2025-03-19T15:51:28.480+0000] {task_command.py:389} INFO - Running <TaskInstance: tech_sentiment_pipeline.check_sentiment scheduled__2025-03-19T15:40:00+00:00 [running]> on host e1e85772f624
+[2025-03-19T15:51:28.566+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tech_sentiment_pipeline
+AIRFLOW_CTX_TASK_ID=check_sentiment
+AIRFLOW_CTX_EXECUTION_DATE=2025-03-19T15:40:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-03-19T15:40:00+00:00
+[2025-03-19T15:51:28.578+0000] {base.py:73} INFO - Using connection ID 'mysql_default' for task execution.
+[2025-03-19T15:51:28.610+0000] {python.py:177} INFO - Done. Returned value was: no_alert
+[2025-03-19T15:51:28.611+0000] {python.py:211} INFO - Branch callable return no_alert
+[2025-03-19T15:51:28.611+0000] {skipmixin.py:155} INFO - Following branch no_alert
+[2025-03-19T15:51:28.612+0000] {skipmixin.py:211} INFO - Skipping tasks ['send_alert']
+[2025-03-19T15:51:28.679+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=tech_sentiment_pipeline, task_id=check_sentiment, execution_date=20250319T154000, start_date=20250319T155128, end_date=20250319T155128
+[2025-03-19T15:51:28.731+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-03-19T15:51:28.762+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

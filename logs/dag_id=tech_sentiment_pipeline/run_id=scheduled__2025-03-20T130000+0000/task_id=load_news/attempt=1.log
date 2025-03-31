@@ -1,0 +1,54 @@
+[2025-03-20T13:10:03.357+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.load_news scheduled__2025-03-20T13:00:00+00:00 [queued]>
+[2025-03-20T13:10:03.366+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.load_news scheduled__2025-03-20T13:00:00+00:00 [queued]>
+[2025-03-20T13:10:03.366+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-20T13:10:03.367+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2025-03-20T13:10:03.367+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-20T13:10:03.387+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): load_news> on 2025-03-20 13:00:00+00:00
+[2025-03-20T13:10:03.393+0000] {standard_task_runner.py:55} INFO - Started process 762 to run task
+[2025-03-20T13:10:03.396+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tech_sentiment_pipeline', 'load_news', 'scheduled__2025-03-20T13:00:00+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/sentiment_ETL_pipeline.py', '--cfg-path', '/tmp/tmp434__fp1']
+[2025-03-20T13:10:03.398+0000] {standard_task_runner.py:83} INFO - Job 26: Subtask load_news
+[2025-03-20T13:10:03.480+0000] {task_command.py:389} INFO - Running <TaskInstance: tech_sentiment_pipeline.load_news scheduled__2025-03-20T13:00:00+00:00 [running]> on host 9f648da9db19
+[2025-03-20T13:10:03.563+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tech_sentiment_pipeline
+AIRFLOW_CTX_TASK_ID=load_news
+AIRFLOW_CTX_EXECUTION_DATE=2025-03-20T13:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-03-20T13:00:00+00:00
+[2025-03-20T13:10:03.575+0000] {base.py:73} INFO - Using connection ID 'mysql_default' for task execution.
+[2025-03-20T13:10:05.257+0000] {logging_mixin.py:137} INFO - News API: Fetched 97 articles.
+[2025-03-20T13:10:06.460+0000] {logging_mixin.py:137} INFO - Hacker News: Fetched 100 stories.
+[2025-03-20T13:10:06.523+0000] {logging_mixin.py:137} INFO - Inserted 197 records into sentiment_data table.
+[2025-03-20T13:10:06.524+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-03-20T13:10:06.534+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=tech_sentiment_pipeline, task_id=load_news, execution_date=20250320T130000, start_date=20250320T131003, end_date=20250320T131006
+[2025-03-20T13:10:06.576+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-03-20T13:10:06.604+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-03-20T13:15:55.435+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.load_news scheduled__2025-03-20T13:00:00+00:00 [queued]>
+[2025-03-20T13:15:55.446+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.load_news scheduled__2025-03-20T13:00:00+00:00 [queued]>
+[2025-03-20T13:15:55.446+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-20T13:15:55.447+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2025-03-20T13:15:55.447+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-20T13:15:55.470+0000] {taskinstance.py:1304} INFO - Executing <Task(PythonOperator): load_news> on 2025-03-20 13:00:00+00:00
+[2025-03-20T13:15:55.478+0000] {standard_task_runner.py:55} INFO - Started process 207 to run task
+[2025-03-20T13:15:55.481+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tech_sentiment_pipeline', 'load_news', 'scheduled__2025-03-20T13:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/sentiment_ETL_pipeline.py', '--cfg-path', '/tmp/tmpyvj4oboe']
+[2025-03-20T13:15:55.484+0000] {standard_task_runner.py:83} INFO - Job 2: Subtask load_news
+[2025-03-20T13:15:55.574+0000] {task_command.py:389} INFO - Running <TaskInstance: tech_sentiment_pipeline.load_news scheduled__2025-03-20T13:00:00+00:00 [running]> on host 228fbd75e4c1
+[2025-03-20T13:15:55.676+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tech_sentiment_pipeline
+AIRFLOW_CTX_TASK_ID=load_news
+AIRFLOW_CTX_EXECUTION_DATE=2025-03-20T13:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-03-20T13:00:00+00:00
+[2025-03-20T13:15:55.687+0000] {base.py:73} INFO - Using connection ID 'mysql_default' for task execution.
+[2025-03-20T13:15:57.253+0000] {logging_mixin.py:137} INFO - News API: Fetched 97 articles.
+[2025-03-20T13:15:58.379+0000] {logging_mixin.py:137} INFO - Hacker News: Fetched 100 stories.
+[2025-03-20T13:15:58.420+0000] {logging_mixin.py:137} INFO - Inserted 197 records into sentiment_data table.
+[2025-03-20T13:15:58.420+0000] {python.py:177} INFO - Done. Returned value was: None
+[2025-03-20T13:15:58.432+0000] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=tech_sentiment_pipeline, task_id=load_news, execution_date=20250320T130000, start_date=20250320T131555, end_date=20250320T131558
+[2025-03-20T13:15:58.502+0000] {local_task_job.py:159} INFO - Task exited with return code 0
+[2025-03-20T13:15:58.532+0000] {taskinstance.py:2582} INFO - 1 downstream tasks scheduled from follow-on schedule check

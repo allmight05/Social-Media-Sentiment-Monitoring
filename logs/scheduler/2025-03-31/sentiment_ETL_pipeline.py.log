@@ -1,0 +1,109 @@
+[2025-03-31T11:40:13.127+0000] {processor.py:153} INFO - Started process (PID=177) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:40:13.128+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:40:13.129+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:40:13.129+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:40:14.769+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:40:14.807+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:40:15.227+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:40:15.227+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:tech_sentiment_pipeline
+[2025-03-31T11:40:15.244+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:40:15.244+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:tech_sentiment_pipeline
+[2025-03-31T11:40:15.261+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:40:15.260+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:tech_sentiment_pipeline
+[2025-03-31T11:40:15.261+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:40:15.261+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:40:15.277+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:40:15.276+0000] {dag.py:2697} INFO - Creating ORM DAG for tech_sentiment_pipeline
+[2025-03-31T11:40:15.293+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:40:15.293+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:40:15.328+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 2.205 seconds
+[2025-03-31T11:40:45.567+0000] {processor.py:153} INFO - Started process (PID=184) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:40:45.570+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:40:45.571+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:40:45.571+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:40:46.354+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:40:46.369+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:40:46.633+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:40:46.633+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:40:46.671+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:40:46.671+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:40:46.715+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.156 seconds
+[2025-03-31T11:41:16.889+0000] {processor.py:153} INFO - Started process (PID=190) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:41:16.891+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:41:16.892+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:41:16.892+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:41:17.747+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:41:17.995+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:41:18.049+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:41:18.049+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:41:18.086+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:41:18.086+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:41:18.137+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.254 seconds
+[2025-03-31T11:41:48.332+0000] {processor.py:153} INFO - Started process (PID=196) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:41:48.334+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:41:48.335+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:41:48.335+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:41:49.298+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:41:49.310+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:41:49.363+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:41:49.363+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:41:49.401+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:41:49.401+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:41:49.437+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.109 seconds
+[2025-03-31T11:42:19.511+0000] {processor.py:153} INFO - Started process (PID=202) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:42:19.513+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:42:19.514+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:42:19.514+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:42:20.332+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:42:20.345+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:42:20.621+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:42:20.620+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:42:20.656+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:42:20.656+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:42:20.695+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.188 seconds
+[2025-03-31T11:42:50.868+0000] {processor.py:153} INFO - Started process (PID=208) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:42:50.870+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:42:50.871+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:42:50.871+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:42:51.737+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:42:51.750+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:42:52.030+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:42:52.029+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:42:52.082+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:42:52.082+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:42:52.129+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.266 seconds
+[2025-03-31T11:43:22.372+0000] {processor.py:153} INFO - Started process (PID=214) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:43:22.373+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:43:22.374+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:43:22.374+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:43:23.183+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:43:23.196+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:43:23.466+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:43:23.465+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:43:23.503+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:43:23.503+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:43:23.540+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.172 seconds
+[2025-03-31T11:43:53.824+0000] {processor.py:153} INFO - Started process (PID=220) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:43:53.825+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:43:53.827+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:43:53.826+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:43:54.587+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:43:54.599+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:43:54.876+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:43:54.875+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:43:54.912+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:43:54.911+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:43:54.966+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.148 seconds
+[2025-03-31T11:44:25.041+0000] {processor.py:153} INFO - Started process (PID=226) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:44:25.043+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:44:25.045+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:44:25.044+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:44:25.878+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:44:26.107+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:44:26.163+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:44:26.163+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:44:26.203+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:44:26.202+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:44:26.243+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.211 seconds
+[2025-03-31T11:44:56.585+0000] {processor.py:153} INFO - Started process (PID=232) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:44:56.586+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:44:56.588+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:44:56.588+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:44:57.686+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:44:57.707+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:44:57.788+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:44:57.787+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:44:57.828+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:44:57.828+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:44:57.875+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.296 seconds
+[2025-03-31T11:45:28.128+0000] {processor.py:153} INFO - Started process (PID=238) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:45:28.129+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:45:28.130+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:45:28.130+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:45:28.925+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:45:28.936+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:45:28.997+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:45:28.996+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:45:29.233+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:45:29.233+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:45:29.281+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.159 seconds
+[2025-03-31T11:45:59.387+0000] {processor.py:153} INFO - Started process (PID=262) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:45:59.389+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:45:59.390+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:45:59.390+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:46:00.164+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:46:00.177+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:46:00.512+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:46:00.511+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:46:00.551+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:46:00.551+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:40:00+00:00, run_after=2025-03-31T11:50:00+00:00
+[2025-03-31T11:46:00.590+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.211 seconds
+[2025-03-31T11:46:30.960+0000] {processor.py:153} INFO - Started process (PID=268) to work on /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:46:30.961+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/sentiment_ETL_pipeline.py for tasks to queue
+[2025-03-31T11:46:30.963+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:46:30.963+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:46:31.739+0000] {logging_mixin.py:137} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py:411 RemovedInAirflow3Warning: provide_context is deprecated as of 2.0 and is no longer required
+[2025-03-31T11:46:31.750+0000] {processor.py:753} INFO - DAG(s) dict_keys(['tech_sentiment_pipeline']) retrieved from /opt/airflow/dags/sentiment_ETL_pipeline.py
+[2025-03-31T11:46:32.057+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:46:32.057+0000] {dag.py:2676} INFO - Sync 1 DAGs
+[2025-03-31T11:46:32.076+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:46:32.076+0000] {dag.py:2697} INFO - Creating ORM DAG for tech_sentiment_pipeline
+[2025-03-31T11:46:32.096+0000] {logging_mixin.py:137} INFO - [2025-03-31T11:46:32.096+0000] {dag.py:3427} INFO - Setting next_dagrun for tech_sentiment_pipeline to 2025-03-31T11:30:00+00:00, run_after=2025-03-31T11:40:00+00:00
+[2025-03-31T11:46:32.136+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/sentiment_ETL_pipeline.py took 1.182 seconds

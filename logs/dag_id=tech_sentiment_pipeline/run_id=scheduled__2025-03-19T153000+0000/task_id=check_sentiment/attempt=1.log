@@ -1,0 +1,97 @@
+[2025-03-19T15:46:25.883+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.check_sentiment scheduled__2025-03-19T15:30:00+00:00 [queued]>
+[2025-03-19T15:46:25.892+0000] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: tech_sentiment_pipeline.check_sentiment scheduled__2025-03-19T15:30:00+00:00 [queued]>
+[2025-03-19T15:46:25.893+0000] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-19T15:46:25.894+0000] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2025-03-19T15:46:25.894+0000] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2025-03-19T15:46:25.917+0000] {taskinstance.py:1304} INFO - Executing <Task(BranchPythonOperator): check_sentiment> on 2025-03-19 15:30:00+00:00
+[2025-03-19T15:46:25.923+0000] {standard_task_runner.py:55} INFO - Started process 218 to run task
+[2025-03-19T15:46:25.925+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'tech_sentiment_pipeline', 'check_sentiment', 'scheduled__2025-03-19T15:30:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/example.py', '--cfg-path', '/tmp/tmpd0v7_i1d']
+[2025-03-19T15:46:25.927+0000] {standard_task_runner.py:83} INFO - Job 4: Subtask check_sentiment
+[2025-03-19T15:46:25.998+0000] {task_command.py:389} INFO - Running <TaskInstance: tech_sentiment_pipeline.check_sentiment scheduled__2025-03-19T15:30:00+00:00 [running]> on host 1c633b329d4d
+[2025-03-19T15:46:26.076+0000] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=tech_sentiment_pipeline
+AIRFLOW_CTX_TASK_ID=check_sentiment
+AIRFLOW_CTX_EXECUTION_DATE=2025-03-19T15:30:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2025-03-19T15:30:00+00:00
+[2025-03-19T15:46:26.086+0000] {base.py:73} INFO - Using connection ID 'mysql_default' for task execution.
+[2025-03-19T15:46:26.096+0000] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1901, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY company\n    HAVING COUNT(*) >= 5' at line 7")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 210, in execute
+    branch = super().execute(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/example.py", line 143, in check_negative_sentiment
+    results = engine.execute(query).fetchall()
+  File "<string>", line 2, in execute
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/deprecations.py", line 402, in warned
+    return fn(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 3257, in execute
+    return connection.execute(statement, *multiparams, **params)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1370, in execute
+    future=False,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1676, in _exec_driver_sql
+    distilled_parameters,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1944, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2125, in _handle_dbapi_exception
+    sqlalchemy_exception, with_traceback=exc_info[2], from_=e
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 210, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1901, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 736, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.ProgrammingError: (MySQLdb.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY company\n    HAVING COUNT(*) >= 5' at line 7")
+[SQL: 
+    SELECT 
+        AVG(sentiment) AS avg_sentiment,
+        company
+    FROM sentiment_data
+    WHERE 
+        timestamp >= NOW() - INTERVAL '7 days'
+    GROUP BY company
+    HAVING COUNT(*) >= 5;
+    ]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+[2025-03-19T15:46:26.110+0000] {taskinstance.py:1327} INFO - Marking task as UP_FOR_RETRY. dag_id=tech_sentiment_pipeline, task_id=check_sentiment, execution_date=20250319T153000, start_date=20250319T154625, end_date=20250319T154626
+[2025-03-19T15:46:26.129+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 4 for task check_sentiment ((MySQLdb.ProgrammingError) (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY company\n    HAVING COUNT(*) >= 5' at line 7")
+[SQL: 
+    SELECT 
+        AVG(sentiment) AS avg_sentiment,
+        company
+    FROM sentiment_data
+    WHERE 
+        timestamp >= NOW() - INTERVAL '7 days'
+    GROUP BY company
+    HAVING COUNT(*) >= 5;
+    ]
+(Background on this error at: https://sqlalche.me/e/14/f405); 218)
+[2025-03-19T15:46:26.177+0000] {local_task_job.py:159} INFO - Task exited with return code 1
+[2025-03-19T15:46:26.203+0000] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
